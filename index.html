@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gokul Srinath — Senior Software Engineer / AI Systems</title>
+  <meta name="description" content="Gokul Srinath — Senior Software Engineer building production-grade AI systems, ML pipelines, and distributed backends. Toggle between a professional profile and a Spider-Noir comic edition." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gokul Srinath — Senior Software Engineer / AI Systems" />
+  <meta property="og:description" content="5.5+ years building production-grade AI systems, ML pipelines, and distributed backends." />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gokul Srinath — Senior Software Engineer / AI Systems" />
+  <meta name="twitter:description" content="5.5+ years building production-grade AI systems, ML pipelines, and distributed backends." />
+  <meta name="twitter:image" content="assets/og.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="mode-pro">
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ MODE TOGGLE ============ -->
+  <button id="modeToggle" class="mode-toggle" aria-label="Switch between professional and comic editions" aria-pressed="false">
+    <span class="mode-toggle__opt" data-opt="pro">Pro</span>
+    <span class="mode-toggle__opt" data-opt="comic">Comic</span>
+    <span class="mode-toggle__knob" aria-hidden="true"></span>
+  </button>
+
+  <!-- ====================================================== -->
+  <!-- ====================  PRO VIEW  ======================= -->
+  <!-- ====================================================== -->
+  <div class="view view-pro" id="top">
+
+    <header class="nav">
+      <a href="#top" class="nav__brand">Gokul Srinath</a>
+      <nav class="nav__links">
+        <a href="#p-about">About</a>
+        <a href="#p-skills">Skills</a>
+        <a href="#p-work">Work</a>
+        <a href="#p-projects">Projects</a>
+        <a href="#p-contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow reveal">Senior Software Engineer · AI Systems</p>
+        <h1 class="hero__name reveal">Gokul<br/>Srinath</h1>
+        <p class="hero__lede reveal">
+          I build production-grade AI systems, ML pipelines, and distributed
+          backends — multi-agent LLM platforms, hybrid RAG, and serverless
+          architecture that ships.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#p-work" class="btn">View work</a>
+          <a href="assets/Gokul_Srinath_Resume.pdf" download class="btn btn--ghost">Download CV ↓</a>
+        </div>
+      </div>
+      <div class="hero__photo reveal">
+        <picture>
+          <source srcset="assets/face.webp" type="image/webp" />
+          <img src="assets/face.jpg" alt="Portrait of Gokul Srinath" width="900" height="1125" loading="eager" />
+        </picture>
+        <span class="hero__photo-tag">Coimbatore, India</span>
+      </div>
+    </section>
+
+    <section class="section" id="p-about">
+      <p class="section__index reveal">01 — About</p>
+      <div class="about">
+        <h2 class="reveal">5.5+ years turning hard problems into systems that run quietly in production.</h2>
+        <p class="reveal">
+          I'm a Senior Software Engineer working across the full AI stack — from
+          RAG pipelines and agentic workflows to data preparation and LLM
+          evaluation. I've shipped a 6-agent LLM platform serving 5,000+
+          employees and a payroll fraud detection pipeline holding 85–90%
+          precision on 10K+ monthly transactions.
+        </p>
+        <p class="reveal">
+          My instinct is serverless-first and event-driven: I've delivered
+          90%+ runtime reductions across multiple systems and led technical
+          delivery for a 5-engineer team shipping 3–4 production releases a
+          sprint.
+        </p>
+      </div>
+    </section>
+
+    <section class="section stats">
+      <div class="stat reveal"><span class="stat__num" data-count="6">6</span><span class="stat__label">domain agents in production</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="5000">5,000+</span><span class="stat__label">employees served</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="95">95%</span><span class="stat__label">batch runtime cut</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="40">40%</span><span class="stat__label">infra spend reduced</span></div>
+    </section>
+
+    <section class="section" id="p-skills">
+      <p class="section__index reveal">02 — Skills</p>
+      <div class="skills">
+        <div class="skill-group reveal"><h3>Languages</h3><p>JavaScript · TypeScript · Python · Java</p></div>
+        <div class="skill-group reveal"><h3>AI / ML</h3><p>LangGraph · RAG · DSPy · RAGAS · Isolation Forest · RuleFit · SMOTE · Vector Search · BM25 · Hybrid Search · Cross-Encoder Reranking</p></div>
+        <div class="skill-group reveal"><h3>Frontend</h3><p>React.js · Redux · TanStack Query · React Hook Form · TailwindCSS</p></div>
+        <div class="skill-group reveal"><h3>Backend</h3><p>Node.js (TypeScript) · Express.js · FastAPI</p></div>
+        <div class="skill-group reveal"><h3>Cloud</h3><p>AWS (Lambda, SQS, Step Functions, API Gateway, DynamoDB) · GCP (Cloud Functions, Pub/Sub, Log Router) · Azure · Serverless</p></div>
+        <div class="skill-group reveal"><h3>Data &amp; Architecture</h3><p>SQL · MongoDB · Redis · Qdrant · pgvector · Distributed Systems · Event-Driven · Microservices · JWT · OAuth</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="p-work">
+      <p class="section__index reveal">03 — Experience</p>
+      <div class="timeline">
+        <article class="job reveal">
+          <div class="job__meta"><span class="job__date">May 2025 — Present</span></div>
+          <div class="job__body">
+            <h3>Senior Software Engineer</h3>
+            <p class="job__org">4iApps Solutions — Payday <em>(AI-powered HR &amp; Payroll Platform)</em></p>
+            <ul>
+              <li>Architect a reusable multi-agent LLM platform on LangGraph — 6 domain agents (Payroll, Payslip, HR Attendance, JD Writer, Resume Parser, Fraud Detection) serving 5,000+ employees, with a Query Interpreter narrowing 200+ APIs to 15 per request and Redis-backed 12-turn memory.</li>
+              <li>Built a hybrid RAG pipeline — semantic chunking, vector search, BM25, RRF, cross-encoder reranking — and used DSPy to cut prompt iteration from days to hours, measured with RAGAS LLM-judge evaluation.</li>
+              <li>Shipped a payroll fraud detection pipeline (Isolation Forest + RuleFit) at 85–90% precision / 80–85% recall on 10K+ monthly transactions, with SMOTE for class imbalance and domain-specific features.</li>
+              <li>Cut batch processing 95%+ (1–2 hrs → &lt;90s) and the costing pipeline 93% (2 hrs → 6–8 min) via event-driven queues and Step Functions; reduced compute spend 40% migrating ECS Fargate to Lambda.</li>
+              <li>Lead technical delivery for a 5-engineer team — architecture direction, 3–4 releases per sprint, sprint planning compressed to under 3 hours with AI-assisted tooling.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job reveal">
+          <div class="job__meta"><span class="job__date">2020 — May 2025</span></div>
+          <div class="job__body">
+            <h3>Software Engineer</h3>
+            <p class="job__org">Virtusa</p>
+            <ul>
+              <li>Contributed to a centralized cloud administration platform for JP Morgan, consolidating 1,000+ infrastructure assets (DaaS, S3, IAM) and automating bulk provisioning via CloudFormation.</li>
+              <li>Helped build a serverless GCP vulnerability detection system (Cloud Functions, Pub/Sub, Log Router) monitoring 30+ cloud accounts from a single control plane.</li>
+              <li>Built ingestion for an incident intelligence RAG tool — normalizing ServiceNow exports, chunking runbooks, metadata tagging into Qdrant — so on-call engineers could query past incidents.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="p-projects">
+      <p class="section__index reveal">04 — Projects</p>
+      <div class="projects">
+        <a class="project reveal" href="https://github.com/gokul-srinath/ai-dev-assistant" target="_blank" rel="noopener">
+          <div class="project__top"><h3>AI Code Review Agent</h3><span class="project__year">2025</span></div>
+          <p>An AI code-review agent triggered by GitHub webhooks that posts structured PR feedback via AWS Bedrock (Amazon Nova). AST-based chunking with Tree-sitter, a dual-index hybrid retrieval pipeline (Qdrant + BM25 + cross-encoder), and PRD validation against a met/not-met checklist.</p>
+          <div class="project__tags"><span>Python</span><span>FastAPI</span><span>AWS Bedrock</span><span>Qdrant</span><span>Tree-sitter</span><span>Docker</span></div>
+          <span class="project__link">View on GitHub →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="p-highlights">
+      <p class="section__index reveal">05 — Highlights</p>
+      <ul class="achievements">
+        <li class="reveal">Slashed batch processing 95%+ and costing pipelines 93% via distributed, event-driven AWS architecture.</li>
+        <li class="reveal">Shipped a 6-agent LLM platform serving 5,000+ employees — hybrid RAG, 200+ API intent routing, 12-turn stateful memory.</li>
+        <li class="reveal">Delivered a payroll fraud ML pipeline at 85–90% precision, replacing a manual multi-day HR review.</li>
+        <li class="reveal">Automated cyber-crisis migration of 10,000+ users with zero data loss — 3+ days manual → 2-hour automated execution.</li>
+      </ul>
+    </section>
+
+    <section class="section contact" id="p-contact">
+      <p class="section__index reveal">06 — Contact</p>
+      <h2 class="reveal">Let's build something that ships.</h2>
+      <div class="contact__links reveal">
+        <a href="mailto:mgokul06@gmail.com">mgokul06@gmail.com</a>
+        <a href="tel:+919790256987">+91 97902 56987</a>
+        <a href="https://github.com/gokul-srinath" target="_blank" rel="noopener">github.com/gokul-srinath</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Gokul Srinath</span>
+      <span>Coimbatore, India</span>
+    </footer>
+  </div><!-- /view-pro -->
+
+
+  <!-- ====================================================== -->
+  <!-- ===================  COMIC VIEW  ====================== -->
+  <!-- ====================================================== -->
+  <div class="view view-comic" id="ctop">
+
+    <header class="cnav">
+      <span class="cnav__brand">GS&nbsp;COMICS</span>
+      <span class="cnav__issue">ISSUE&nbsp;#01 · 2026</span>
+    </header>
+
+    <!-- COVER -->
+    <section class="cover">
+      <div class="cover__panel cphoto reveal-pop">
+        <picture>
+          <source srcset="assets/face.webp" type="image/webp" />
+          <img src="assets/face.jpg" alt="Gokul Srinath, comic edition" loading="lazy" />
+        </picture>
+        <span class="sfx sfx--ship">SHIP IT!</span>
+      </div>
+      <div class="cover__text">
+        <p class="cover__kicker reveal-pop">GS Comics presents</p>
+        <h1 class="cover__title reveal-pop">The Engineer<br/>Who Shipped</h1>
+        <p class="cover__tag reveal-pop">An origin story told in code, chaos &amp; cloud.</p>
+        <a href="#mission-01" class="cbtn reveal-pop">Begin the story ↓</a>
+      </div>
+    </section>
+
+    <!-- ORIGIN -->
+    <section class="cstrip">
+      <h2 class="chapter reveal-pop"><span>Chapter 1</span>The Origin</h2>
+      <div class="caption reveal-pop">
+        Coimbatore, India. 5.5+ years deep in the trenches of production
+        systems, one engineer learned to make machines think — and ship.
+      </div>
+      <div class="panel-row">
+        <div class="panel reveal-pop">
+          <p class="bubble">"When the pipelines broke, the agents went rogue, and payroll needed a brain… they called him."</p>
+        </div>
+        <div class="panel panel--dark reveal-pop">
+          <p>Full-stack across the AI universe: RAG pipelines, agentic workflows, data prep, and LLM evaluation — backed by a serverless-first, event-driven mind.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- POWERS -->
+    <section class="cstrip">
+      <h2 class="chapter reveal-pop"><span>Chapter 2</span>Powers &amp; Arsenal</h2>
+      <div class="caption caption--right reveal-pop">Every hero needs an arsenal. His was forged in production fire — and it cuts through chaos at scale.</div>
+      <div class="arsenal">
+        <div class="apanel reveal-pop"><h3>AI / ML</h3><p>LangGraph · RAG · DSPy · RAGAS · Isolation Forest · RuleFit · SMOTE · BM25 · Hybrid Search · Cross-Encoder Reranking</p></div>
+        <div class="apanel reveal-pop"><h3>Languages</h3><p>JavaScript · TypeScript · Python · Java</p></div>
+        <div class="apanel reveal-pop"><h3>Cloud</h3><p>AWS (Lambda, SQS, Step Functions, DynamoDB) · GCP · Azure · Serverless</p></div>
+        <div class="apanel reveal-pop"><h3>Frontend</h3><p>React · Redux · TanStack Query · React Hook Form · TailwindCSS</p></div>
+        <div class="apanel reveal-pop"><h3>Backend</h3><p>Node.js (TypeScript) · Express.js · FastAPI</p></div>
+        <div class="apanel reveal-pop"><h3>Data</h3><p>SQL · MongoDB · Redis · Qdrant · pgvector</p></div>
+      </div>
+    </section>
+
+    <!-- MISSION 1 -->
+    <section class="cstrip" id="mission-01">
+      <h2 class="chapter reveal-pop"><span>Chapter 3</span>The Missions</h2>
+      <div class="caption reveal-pop">Two cities. Two impossible briefs. Each one ended the same way — with the manual, the slow, and the broken… retired for good.</div>
+
+      <article class="mission reveal-pop">
+        <div class="mission__head">
+          <h3>Mission 01 — “Payday”</h3>
+          <span class="mission__time">4iApps Solutions · May 2025 → Now</span>
+        </div>
+        <p class="villain">⚔ The Villain: the Manual Payroll Monster — multi-day reviews, runaway compute bills, and fraud slipping through the cracks.</p>
+        <ul class="hits">
+          <li><b>POW!</b> Forged a 6-agent LLM platform on LangGraph serving 5,000+ employees — a Query Interpreter cutting 200+ APIs down to 15 per request, with 12-turn memory.</li>
+          <li><b>ZAP!</b> Wired a hybrid RAG pipeline (semantic chunking · vector · BM25 · RRF · cross-encoder) and tamed prompts with DSPy — days of tuning down to hours.</li>
+          <li><b>BAM!</b> Built a fraud-detection pipeline (Isolation Forest + RuleFit) at 85–90% precision on 10K+ monthly transactions — manual multi-day review, gone.</li>
+          <li><b>WHOOSH!</b> Batch jobs 95% faster (1–2 hrs → &lt;90s), costing pipeline 93% faster, infra spend down 40%.</li>
+        </ul>
+        <span class="sfx sfx--inline">95% FASTER!</span>
+      </article>
+
+      <article class="mission reveal-pop">
+        <div class="mission__head">
+          <h3>Mission 02 — “The Cloud Frontier”</h3>
+          <span class="mission__time">Virtusa · 2020 → 2025</span>
+        </div>
+        <p class="villain">⚔ The Villain: cloud sprawl — 1,000+ scattered assets, hidden vulnerabilities, and slow incident response.</p>
+        <ul class="hits">
+          <li><b>POW!</b> Consolidated 1,000+ infra assets (DaaS, S3, IAM) for JP Morgan and automated bulk provisioning with CloudFormation.</li>
+          <li><b>ZAP!</b> Helped build a serverless GCP vulnerability radar watching 30+ cloud accounts from one control plane.</li>
+          <li><b>BAM!</b> Shipped an incident-intelligence RAG tool so on-call engineers could query past incidents and pull runbook fixes fast.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- SIDE QUEST -->
+    <section class="cstrip">
+      <h2 class="chapter reveal-pop"><span>Chapter 4</span>Side Quests</h2>
+      <div class="caption caption--right reveal-pop">When the day job slept, he still patrolled the pull requests…</div>
+      <a class="quest reveal-pop" href="https://github.com/gokul-srinath/ai-dev-assistant" target="_blank" rel="noopener">
+        <h3>AI Code Review Agent <span>· 2025</span></h3>
+        <p>A vigilante that patrols your pull requests — triggered by GitHub webhooks, it posts structured PR feedback via AWS Bedrock (Amazon Nova). AST-aware Tree-sitter chunking, a dual-index hybrid retrieval pipeline, and PRD validation against a strict met/not-met checklist.</p>
+        <span class="quest__link">Read the case file on GitHub →</span>
+      </a>
+    </section>
+
+    <!-- HALL OF VICTORIES -->
+    <section class="cstrip">
+      <h2 class="chapter reveal-pop"><span>Chapter 5</span>Hall of Victories</h2>
+      <div class="caption reveal-pop">Some battles echo louder than others. These are the numbers they left behind.</div>
+      <div class="victories">
+        <div class="victory reveal-pop"><span class="sfx">95%+</span><p>batch processing slashed via event-driven AWS architecture</p></div>
+        <div class="victory reveal-pop"><span class="sfx">5,000+</span><p>employees served by a 6-agent LLM platform</p></div>
+        <div class="victory reveal-pop"><span class="sfx">85–90%</span><p>fraud-detection precision, replacing manual HR review</p></div>
+        <div class="victory reveal-pop"><span class="sfx">10,000+</span><p>users migrated in a cyber-crisis with zero data loss</p></div>
+      </div>
+    </section>
+
+    <!-- SIGNAL -->
+    <section class="cstrip csignal">
+      <h2 class="chapter reveal-pop"><span>Final Page</span>Send a Signal</h2>
+      <div class="caption reveal-pop">Need a hero for your codebase? The line is open.</div>
+      <div class="signal__links reveal-pop">
+        <a href="mailto:mgokul06@gmail.com">mgokul06@gmail.com</a>
+        <a href="tel:+919790256987">+91 97902 56987</a>
+        <a href="https://github.com/gokul-srinath" target="_blank" rel="noopener">github.com/gokul-srinath</a>
+        <a href="assets/Gokul_Srinath_Resume.pdf" download>Download the dossier ↓</a>
+      </div>
+    </section>
+
+    <footer class="cfooter">TO BE CONTINUED… · © 2026 Gokul Srinath · Coimbatore, India</footer>
+  </div><!-- /view-comic -->
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -226,13 +226,13 @@ a { color: inherit; text-decoration: none; }
 /* cover */
 .cover {
   max-width: var(--max); margin: 0 auto;
-  display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.5rem; align-items: stretch;
+  display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.5rem; align-items: center;
   padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3rem);
 }
 .cover__panel { border: 5px solid #000; position: relative; overflow: hidden; background: #000; box-shadow: 12px 12px 0 var(--c-mid), 0 0 0 1px var(--c-edge); transition: transform 0.35s var(--ease); }
 .cover__panel:hover { transform: rotate(-1deg) scale(1.01); }
-.cphoto { min-height: 460px; }
-.cphoto img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; display: block; filter: grayscale(1) contrast(1.45) brightness(0.92); }
+.cphoto { aspect-ratio: 4 / 5; } /* match the headshot so it shows in full, no zoom */
+.cphoto img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; filter: grayscale(1) contrast(1.45) brightness(0.92); }
 .cphoto::after { content: ""; position: absolute; inset: 0; background-image: var(--halftone); background-size: 5px 5px; mix-blend-mode: multiply; opacity: 0.55; pointer-events: none; }
 .cover__text { display: flex; flex-direction: column; justify-content: center; padding: 1rem 0.5rem; }
 .cover__kicker { display: inline-flex; align-items: center; gap: 0.4rem; font-family: "Special Elite", monospace; font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.7rem; }
@@ -366,8 +366,8 @@ a { color: inherit; text-decoration: none; }
   .skill-group:nth-child(even) { padding-left: 0.5rem; }
   .job { grid-template-columns: 1fr; gap: 1rem; }
 
-  .cover { grid-template-columns: 1fr; }
-  .cphoto { max-height: 60vh; }
+  .cover { grid-template-columns: 1fr; align-items: stretch; }
+  .cphoto { max-width: 340px; margin: 0 auto; }
   .panel-row { grid-template-columns: 1fr; }
   .arsenal { grid-template-columns: 1fr 1fr; }
   .victories { grid-template-columns: 1fr; }

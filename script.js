@@ -4,10 +4,10 @@
 
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var body = document.body;
-
-  // ---------- Theme toggle (Professional / Comic) ----------
   var toggle = document.getElementById("modeToggle");
-  var KEY = "gs-mode";
+  var hint = document.getElementById("modeHint");
+  var hintClose = document.getElementById("modeHintClose");
+  var HINT_KEY = "gs-hint-seen";
 
   function applyMode(mode) {
     var comic = mode === "comic";
@@ -15,27 +15,47 @@
     body.classList.toggle("mode-pro", !comic);
     if (toggle) toggle.setAttribute("aria-pressed", String(comic));
     window.scrollTo(0, 0);
-    // re-run reveals for whichever view is now visible
-    requestAnimationFrame(function () { observeReveals(); });
+    requestAnimationFrame(observeReveals);
   }
 
-  var hash = (location.hash || "").toLowerCase();
-  if (hash === "#comic" || hash === "#pro") {
-    applyMode(hash.slice(1));
-  } else {
-    try {
-      var saved = localStorage.getItem(KEY);
-      if (saved === "comic" || saved === "pro") applyMode(saved);
-    } catch (e) {}
+  // Default is ALWAYS professional. Only a #comic deep-link starts in comic.
+  if ((location.hash || "").toLowerCase() === "#comic") {
+    applyMode("comic");
   }
 
   if (toggle) {
     toggle.addEventListener("click", function () {
       var next = body.classList.contains("mode-comic") ? "pro" : "comic";
       applyMode(next);
-      try { localStorage.setItem(KEY, next); } catch (e) {}
+      dismissHint();
     });
   }
+
+  // ---------- One-time hint nudging the comic edition ----------
+  function dismissHint() {
+    if (!hint) return;
+    hint.setAttribute("hidden", "");
+    body.classList.remove("hint-active");
+    try { localStorage.setItem(HINT_KEY, "1"); } catch (e) {}
+  }
+  (function maybeShowHint() {
+    if (!hint) return;
+    var seen = false;
+    try { seen = localStorage.getItem(HINT_KEY) === "1"; } catch (e) {}
+    if (seen || body.classList.contains("mode-comic")) return;
+    setTimeout(function () {
+      if (body.classList.contains("mode-comic")) return;
+      hint.removeAttribute("hidden");
+      body.classList.add("hint-active");
+      setTimeout(dismissHint, 9000); // auto-dismiss
+    }, 1400);
+  })();
+  if (hintClose) hintClose.addEventListener("click", dismissHint);
+  if (hint) hint.addEventListener("click", function (e) {
+    if (e.target === hintClose) return;
+    applyMode("comic");
+    dismissHint();
+  });
 
   // ---------- Scroll reveal ----------
   var io = null;
@@ -48,15 +68,11 @@
     if (!io) {
       io = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            io.unobserve(entry.target);
-          }
+          if (entry.isIntersecting) { entry.target.classList.add("in"); io.unobserve(entry.target); }
         });
       }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
     }
     els.forEach(function (el) {
-      // only observe elements inside the currently visible view
       if (!el.classList.contains("in") && el.offsetParent !== null) io.observe(el);
     });
   }

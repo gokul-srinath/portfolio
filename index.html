@@ -24,6 +24,23 @@
 </head>
 <body class="mode-pro">
 
+  <!-- ============ ICON SPRITE (inline, no extra requests) ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-ai" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M10 4v3M14 4v3M10 17v3M14 17v3M4 10h3M4 14h3M17 10h3M17 14h3"/></g></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 7 3 12 8 17"/><polyline points="16 7 21 12 16 17"/><line x1="13.5" y1="5" x2="10.5" y2="19"/></g></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.3A3.5 3.5 0 0 1 18 18z"/></symbol>
+    <symbol id="i-frontend" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/></g><circle cx="6.3" cy="7" r=".8" fill="currentColor"/></symbol>
+    <symbol id="i-backend" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="7" rx="1.5"/><rect x="4" y="13" width="16" height="7" rx="1.5"/></g><circle cx="7.5" cy="7.5" r=".8" fill="currentColor"/><circle cx="7.5" cy="16.5" r=".8" fill="currentColor"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.9 6.4L20 10l-6.1 1.6L12 18l-1.9-6.4L4 10l6.1-1.6z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+  </svg>
+
   <div class="grain" aria-hidden="true"></div>
 
   <!-- ============ MODE TOGGLE ============ -->
@@ -32,6 +49,13 @@
     <span class="mode-toggle__opt" data-opt="comic">Comic</span>
     <span class="mode-toggle__knob" aria-hidden="true"></span>
   </button>
+
+  <!-- one-time hint nudging the comic edition -->
+  <div id="modeHint" class="mode-hint" hidden>
+    <svg class="ico"><use href="#i-spark"/></svg>
+    <span>Psst — flip to the <b>Comic</b> edition</span>
+    <button class="mode-hint__close" id="modeHintClose" aria-label="Dismiss">×</button>
+  </div>
 
   <!-- ====================================================== -->
   <!-- ====================  PRO VIEW  ======================= -->
@@ -60,15 +84,15 @@
         </p>
         <div class="hero__actions reveal">
           <a href="#p-work" class="btn">View work</a>
-          <a href="assets/Gokul_Srinath_Resume.pdf" download class="btn btn--ghost">Download CV ↓</a>
+          <a href="assets/Gokul_Srinath_Resume.pdf" download class="btn btn--ghost"><svg class="ico"><use href="#i-download"/></svg> Download CV</a>
         </div>
       </div>
       <div class="hero__photo reveal">
         <picture>
-          <source srcset="assets/face.webp" type="image/webp" />
-          <img src="assets/face.jpg" alt="Portrait of Gokul Srinath" width="900" height="1125" loading="eager" />
+          <source srcset="assets/portrait.webp" type="image/webp" />
+          <img src="assets/portrait.jpg" alt="Portrait of Gokul Srinath" width="1100" height="1467" loading="eager" />
         </picture>
-        <span class="hero__photo-tag">Coimbatore, India</span>
+        <span class="hero__photo-tag"><svg class="ico"><use href="#i-pin"/></svg> Coimbatore, India</span>
       </div>
     </section>
 
@@ -102,12 +126,12 @@
     <section class="section" id="p-skills">
       <p class="section__index reveal">02 — Skills</p>
       <div class="skills">
-        <div class="skill-group reveal"><h3>Languages</h3><p>JavaScript · TypeScript · Python · Java</p></div>
-        <div class="skill-group reveal"><h3>AI / ML</h3><p>LangGraph · RAG · DSPy · RAGAS · Isolation Forest · RuleFit · SMOTE · Vector Search · BM25 · Hybrid Search · Cross-Encoder Reranking</p></div>
-        <div class="skill-group reveal"><h3>Frontend</h3><p>React.js · Redux · TanStack Query · React Hook Form · TailwindCSS</p></div>
-        <div class="skill-group reveal"><h3>Backend</h3><p>Node.js (TypeScript) · Express.js · FastAPI</p></div>
-        <div class="skill-group reveal"><h3>Cloud</h3><p>AWS (Lambda, SQS, Step Functions, API Gateway, DynamoDB) · GCP (Cloud Functions, Pub/Sub, Log Router) · Azure · Serverless</p></div>
-        <div class="skill-group reveal"><h3>Data &amp; Architecture</h3><p>SQL · MongoDB · Redis · Qdrant · pgvector · Distributed Systems · Event-Driven · Microservices · JWT · OAuth</p></div>
+        <div class="skill-group reveal"><h3><svg class="ico"><use href="#i-code"/></svg>Languages</h3><p>JavaScript · TypeScript · Python · Java</p></div>
+        <div class="skill-group reveal"><h3><svg class="ico"><use href="#i-ai"/></svg>AI / ML</h3><p>LangGraph · RAG · DSPy · RAGAS · Isolation Forest · RuleFit · SMOTE · Vector Search · BM25 · Hybrid Search · Cross-Encoder Reranking</p></div>
+        <div class="skill-group reveal"><h3><svg class="ico"><use href="#i-frontend"/></svg>Frontend</h3><p>React.js · Redux · TanStack Query · React Hook Form · TailwindCSS</p></div>
+        <div class="skill-group reveal"><h3><svg class="ico"><use href="#i-backend"/></svg>Backend</h3><p>Node.js (TypeScript) · Express.js · FastAPI</p></div>
+        <div class="skill-group reveal"><h3><svg class="ico"><use href="#i-cloud"/></svg>Cloud</h3><p>AWS (Lambda, SQS, Step Functions, API Gateway, DynamoDB) · GCP (Cloud Functions, Pub/Sub, Log Router) · Azure · Serverless</p></div>
+        <div class="skill-group reveal"><h3><svg class="ico"><use href="#i-data"/></svg>Data &amp; Architecture</h3><p>SQL · MongoDB · Redis · Qdrant · pgvector · Distributed Systems · Event-Driven · Microservices · JWT · OAuth</p></div>
       </div>
     </section>
 
@@ -150,7 +174,7 @@
           <div class="project__top"><h3>AI Code Review Agent</h3><span class="project__year">2025</span></div>
           <p>An AI code-review agent triggered by GitHub webhooks that posts structured PR feedback via AWS Bedrock (Amazon Nova). AST-based chunking with Tree-sitter, a dual-index hybrid retrieval pipeline (Qdrant + BM25 + cross-encoder), and PRD validation against a met/not-met checklist.</p>
           <div class="project__tags"><span>Python</span><span>FastAPI</span><span>AWS Bedrock</span><span>Qdrant</span><span>Tree-sitter</span><span>Docker</span></div>
-          <span class="project__link">View on GitHub →</span>
+          <span class="project__link"><svg class="ico"><use href="#i-github"/></svg> View on GitHub →</span>
         </a>
       </div>
     </section>
@@ -169,15 +193,15 @@
       <p class="section__index reveal">06 — Contact</p>
       <h2 class="reveal">Let's build something that ships.</h2>
       <div class="contact__links reveal">
-        <a href="mailto:mgokul06@gmail.com">mgokul06@gmail.com</a>
-        <a href="tel:+919790256987">+91 97902 56987</a>
-        <a href="https://github.com/gokul-srinath" target="_blank" rel="noopener">github.com/gokul-srinath</a>
+        <a href="mailto:mgokul06@gmail.com"><svg class="ico"><use href="#i-mail"/></svg>mgokul06@gmail.com</a>
+        <a href="tel:+919790256987"><svg class="ico"><use href="#i-phone"/></svg>+91 97902 56987</a>
+        <a href="https://github.com/gokul-srinath" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg>github.com/gokul-srinath</a>
       </div>
     </section>
 
     <footer class="footer">
       <span>© 2026 Gokul Srinath</span>
-      <span>Coimbatore, India</span>
+      <span><svg class="ico"><use href="#i-pin"/></svg> Coimbatore, India</span>
     </footer>
   </div><!-- /view-pro -->
 
@@ -188,21 +212,21 @@
   <div class="view view-comic" id="ctop">
 
     <header class="cnav">
-      <span class="cnav__brand">GS&nbsp;COMICS</span>
-      <span class="cnav__issue">ISSUE&nbsp;#01 · 2026</span>
+      <span class="cnav__brand">Gokul Srinath</span>
+      <span class="cnav__issue">Origin Issue · No. 01</span>
     </header>
 
     <!-- COVER -->
     <section class="cover">
       <div class="cover__panel cphoto reveal-pop">
         <picture>
-          <source srcset="assets/face.webp" type="image/webp" />
-          <img src="assets/face.jpg" alt="Gokul Srinath, comic edition" loading="lazy" />
+          <source srcset="assets/portrait.webp" type="image/webp" />
+          <img src="assets/portrait.jpg" alt="Gokul Srinath, comic edition" loading="lazy" />
         </picture>
         <span class="sfx sfx--ship">SHIP IT!</span>
       </div>
       <div class="cover__text">
-        <p class="cover__kicker reveal-pop">GS Comics presents</p>
+        <p class="cover__kicker reveal-pop"><svg class="ico"><use href="#i-spark"/></svg> Origin Issue · No. 01</p>
         <h1 class="cover__title reveal-pop">The Engineer<br/>Who Shipped</h1>
         <p class="cover__tag reveal-pop">An origin story told in code, chaos &amp; cloud.</p>
         <a href="#mission-01" class="cbtn reveal-pop">Begin the story ↓</a>
@@ -213,34 +237,39 @@
     <section class="cstrip">
       <h2 class="chapter reveal-pop"><span>Chapter 1</span>The Origin</h2>
       <div class="caption reveal-pop">
-        Coimbatore, India. 5.5+ years deep in the trenches of production
-        systems, one engineer learned to make machines think — and ship.
+        Coimbatore, India — 2 A.M. Somewhere a pipeline is failing, a payroll
+        run is stalling, and ten thousand people are about to notice. Most
+        engineers reach for coffee. <b>He reaches for the architecture.</b>
       </div>
       <div class="panel-row">
         <div class="panel reveal-pop">
           <p class="bubble">"When the pipelines broke, the agents went rogue, and payroll needed a brain… they called him."</p>
         </div>
         <div class="panel panel--dark reveal-pop">
-          <p>Full-stack across the AI universe: RAG pipelines, agentic workflows, data prep, and LLM evaluation — backed by a serverless-first, event-driven mind.</p>
+          <p>Five and a half years in the trenches taught him the whole AI universe — RAG pipelines, agentic workflows, data prep, LLM evaluation — and a serverless-first mind that turns hours of work into seconds.</p>
         </div>
+      </div>
+      <div class="caption caption--right reveal-pop">
+        Every origin needs a turning point. His came the day the manual,
+        the slow, and the broken stopped being “just how it works.”
       </div>
     </section>
 
     <!-- POWERS -->
     <section class="cstrip">
       <h2 class="chapter reveal-pop"><span>Chapter 2</span>Powers &amp; Arsenal</h2>
-      <div class="caption caption--right reveal-pop">Every hero needs an arsenal. His was forged in production fire — and it cuts through chaos at scale.</div>
+      <div class="caption reveal-pop">Every hero needs an arsenal. His was forged in production fire — and it cuts through chaos at scale.</div>
       <div class="arsenal">
-        <div class="apanel reveal-pop"><h3>AI / ML</h3><p>LangGraph · RAG · DSPy · RAGAS · Isolation Forest · RuleFit · SMOTE · BM25 · Hybrid Search · Cross-Encoder Reranking</p></div>
-        <div class="apanel reveal-pop"><h3>Languages</h3><p>JavaScript · TypeScript · Python · Java</p></div>
-        <div class="apanel reveal-pop"><h3>Cloud</h3><p>AWS (Lambda, SQS, Step Functions, DynamoDB) · GCP · Azure · Serverless</p></div>
-        <div class="apanel reveal-pop"><h3>Frontend</h3><p>React · Redux · TanStack Query · React Hook Form · TailwindCSS</p></div>
-        <div class="apanel reveal-pop"><h3>Backend</h3><p>Node.js (TypeScript) · Express.js · FastAPI</p></div>
-        <div class="apanel reveal-pop"><h3>Data</h3><p>SQL · MongoDB · Redis · Qdrant · pgvector</p></div>
+        <div class="apanel reveal-pop"><h3><svg class="ico"><use href="#i-ai"/></svg>AI / ML</h3><p>LangGraph · RAG · DSPy · RAGAS · Isolation Forest · RuleFit · SMOTE · BM25 · Hybrid Search · Cross-Encoder Reranking</p></div>
+        <div class="apanel reveal-pop"><h3><svg class="ico"><use href="#i-code"/></svg>Languages</h3><p>JavaScript · TypeScript · Python · Java</p></div>
+        <div class="apanel reveal-pop"><h3><svg class="ico"><use href="#i-cloud"/></svg>Cloud</h3><p>AWS (Lambda, SQS, Step Functions, DynamoDB) · GCP · Azure · Serverless</p></div>
+        <div class="apanel reveal-pop"><h3><svg class="ico"><use href="#i-frontend"/></svg>Frontend</h3><p>React · Redux · TanStack Query · React Hook Form · TailwindCSS</p></div>
+        <div class="apanel reveal-pop"><h3><svg class="ico"><use href="#i-backend"/></svg>Backend</h3><p>Node.js (TypeScript) · Express.js · FastAPI</p></div>
+        <div class="apanel reveal-pop"><h3><svg class="ico"><use href="#i-data"/></svg>Data</h3><p>SQL · MongoDB · Redis · Qdrant · pgvector</p></div>
       </div>
     </section>
 
-    <!-- MISSION 1 -->
+    <!-- MISSIONS -->
     <section class="cstrip" id="mission-01">
       <h2 class="chapter reveal-pop"><span>Chapter 3</span>The Missions</h2>
       <div class="caption reveal-pop">Two cities. Two impossible briefs. Each one ended the same way — with the manual, the slow, and the broken… retired for good.</div>
@@ -250,7 +279,7 @@
           <h3>Mission 01 — “Payday”</h3>
           <span class="mission__time">4iApps Solutions · May 2025 → Now</span>
         </div>
-        <p class="villain">⚔ The Villain: the Manual Payroll Monster — multi-day reviews, runaway compute bills, and fraud slipping through the cracks.</p>
+        <p class="villain"><span class="villain__tag">The Villain</span> The Manual Payroll Monster — multi-day reviews, runaway compute bills, and fraud slipping through the cracks.</p>
         <ul class="hits">
           <li><b>POW!</b> Forged a 6-agent LLM platform on LangGraph serving 5,000+ employees — a Query Interpreter cutting 200+ APIs down to 15 per request, with 12-turn memory.</li>
           <li><b>ZAP!</b> Wired a hybrid RAG pipeline (semantic chunking · vector · BM25 · RRF · cross-encoder) and tamed prompts with DSPy — days of tuning down to hours.</li>
@@ -265,7 +294,7 @@
           <h3>Mission 02 — “The Cloud Frontier”</h3>
           <span class="mission__time">Virtusa · 2020 → 2025</span>
         </div>
-        <p class="villain">⚔ The Villain: cloud sprawl — 1,000+ scattered assets, hidden vulnerabilities, and slow incident response.</p>
+        <p class="villain"><span class="villain__tag">The Villain</span> Cloud Sprawl — 1,000+ scattered assets, hidden vulnerabilities, and incident response that crawled.</p>
         <ul class="hits">
           <li><b>POW!</b> Consolidated 1,000+ infra assets (DaaS, S3, IAM) for JP Morgan and automated bulk provisioning with CloudFormation.</li>
           <li><b>ZAP!</b> Helped build a serverless GCP vulnerability radar watching 30+ cloud accounts from one control plane.</li>
@@ -279,7 +308,7 @@
       <h2 class="chapter reveal-pop"><span>Chapter 4</span>Side Quests</h2>
       <div class="caption caption--right reveal-pop">When the day job slept, he still patrolled the pull requests…</div>
       <a class="quest reveal-pop" href="https://github.com/gokul-srinath/ai-dev-assistant" target="_blank" rel="noopener">
-        <h3>AI Code Review Agent <span>· 2025</span></h3>
+        <h3><svg class="ico"><use href="#i-github"/></svg>AI Code Review Agent <span>· 2025</span></h3>
         <p>A vigilante that patrols your pull requests — triggered by GitHub webhooks, it posts structured PR feedback via AWS Bedrock (Amazon Nova). AST-aware Tree-sitter chunking, a dual-index hybrid retrieval pipeline, and PRD validation against a strict met/not-met checklist.</p>
         <span class="quest__link">Read the case file on GitHub →</span>
       </a>
@@ -300,12 +329,12 @@
     <!-- SIGNAL -->
     <section class="cstrip csignal">
       <h2 class="chapter reveal-pop"><span>Final Page</span>Send a Signal</h2>
-      <div class="caption reveal-pop">Need a hero for your codebase? The line is open.</div>
+      <div class="caption reveal-pop">Every hero answers the call. Need one for your codebase? The line is open.</div>
       <div class="signal__links reveal-pop">
-        <a href="mailto:mgokul06@gmail.com">mgokul06@gmail.com</a>
-        <a href="tel:+919790256987">+91 97902 56987</a>
-        <a href="https://github.com/gokul-srinath" target="_blank" rel="noopener">github.com/gokul-srinath</a>
-        <a href="assets/Gokul_Srinath_Resume.pdf" download>Download the dossier ↓</a>
+        <a href="mailto:mgokul06@gmail.com"><svg class="ico"><use href="#i-mail"/></svg>mgokul06@gmail.com</a>
+        <a href="tel:+919790256987"><svg class="ico"><use href="#i-phone"/></svg>+91 97902 56987</a>
+        <a href="https://github.com/gokul-srinath" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg>github.com/gokul-srinath</a>
+        <a href="assets/Gokul_Srinath_Resume.pdf" download><svg class="ico"><use href="#i-download"/></svg>Download the dossier</a>
       </div>
     </section>
 

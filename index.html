@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Special+Elite&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=7" />
 </head>
 <body class="mode-pro">
 
@@ -39,6 +39,8 @@
     <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
     <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.9 6.4L20 10l-6.1 1.6L12 18l-1.9-6.4L4 10l6.1-1.6z"/></symbol>
     <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 5.4a3.2 3.2 0 0 1 0 5.2"/><path d="M17.6 19a5.6 5.6 0 0 0-3-4.9"/></g></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v10M9.6 9.3c.3-1 1.3-1.5 2.4-1.5 1.4 0 2.3.8 2.3 1.9 0 2.4-4.8 1.3-4.8 3.9 0 1.1 1 1.9 2.5 1.9 1.1 0 2-.5 2.4-1.4"/></g></symbol>
   </svg>
 
   <div class="grain" aria-hidden="true"></div>
@@ -117,10 +119,10 @@
     </section>
 
     <section class="section stats">
-      <div class="stat reveal"><span class="stat__num" data-count="6">6</span><span class="stat__label">domain agents in production</span></div>
-      <div class="stat reveal"><span class="stat__num" data-count="5000">5,000+</span><span class="stat__label">employees served</span></div>
-      <div class="stat reveal"><span class="stat__num" data-count="95">95%</span><span class="stat__label">batch runtime cut</span></div>
-      <div class="stat reveal"><span class="stat__num" data-count="40">40%</span><span class="stat__label">infra spend reduced</span></div>
+      <div class="stat reveal"><span class="stat__ico"><svg class="ico"><use href="#i-ai"/></svg></span><span class="stat__num" data-count="6">6</span><span class="stat__label">domain agents in production</span></div>
+      <div class="stat reveal"><span class="stat__ico"><svg class="ico"><use href="#i-users"/></svg></span><span class="stat__num" data-count="5000">5,000+</span><span class="stat__label">employees served</span></div>
+      <div class="stat reveal"><span class="stat__ico"><svg class="ico"><use href="#i-bolt"/></svg></span><span class="stat__num" data-count="95">95%</span><span class="stat__label">batch runtime cut</span></div>
+      <div class="stat reveal"><span class="stat__ico"><svg class="ico"><use href="#i-coin"/></svg></span><span class="stat__num" data-count="40">40%</span><span class="stat__label">infra spend reduced</span></div>
     </section>
 
     <section class="section" id="p-skills">
@@ -258,7 +260,7 @@
     <!-- POWERS -->
     <section class="cstrip">
       <h2 class="chapter reveal-pop"><span>Chapter 2</span>Powers &amp; Arsenal</h2>
-      <div class="caption reveal-pop">Every hero needs an arsenal. His was forged in production fire — and it cuts through chaos at scale.</div>
+      <div class="caption reveal-pop">The toolkit — sharpened on production systems, not tutorials. Every line of it has shipped.</div>
       <div class="arsenal">
         <div class="apanel reveal-pop"><h3><svg class="ico"><use href="#i-ai"/></svg>AI / ML</h3><p>LangGraph · RAG · DSPy · RAGAS · Isolation Forest · RuleFit · SMOTE · BM25 · Hybrid Search · Cross-Encoder Reranking</p></div>
         <div class="apanel reveal-pop"><h3><svg class="ico"><use href="#i-code"/></svg>Languages</h3><p>JavaScript · TypeScript · Python · Java</p></div>
@@ -281,12 +283,11 @@
         </div>
         <p class="villain"><span class="villain__tag">The Villain</span> The Manual Payroll Monster — multi-day reviews, runaway compute bills, and fraud slipping through the cracks.</p>
         <ul class="hits">
-          <li><b>POW!</b> Forged a 6-agent LLM platform on LangGraph serving 5,000+ employees — a Query Interpreter cutting 200+ APIs down to 15 per request, with 12-turn memory.</li>
-          <li><b>ZAP!</b> Wired a hybrid RAG pipeline (semantic chunking · vector · BM25 · RRF · cross-encoder) and tamed prompts with DSPy — days of tuning down to hours.</li>
-          <li><b>BAM!</b> Built a fraud-detection pipeline (Isolation Forest + RuleFit) at 85–90% precision on 10K+ monthly transactions — manual multi-day review, gone.</li>
-          <li><b>WHOOSH!</b> Batch jobs 95% faster (1–2 hrs → &lt;90s), costing pipeline 93% faster, infra spend down 40%.</li>
+          <li>Built a 6-agent LLM platform on LangGraph for 5,000+ employees — a Query Interpreter that narrows 200+ APIs to 15 per request, backed by 12-turn memory.</li>
+          <li>Stood up a hybrid RAG pipeline — semantic chunking, vector, BM25, RRF, cross-encoder — and let DSPy handle the prompt tuning. Days of work, down to hours.</li>
+          <li>Shipped fraud detection (Isolation Forest + RuleFit) at 85–90% precision across 10K+ monthly transactions. The multi-day manual review didn't survive it.</li>
+          <li>Batch jobs went from 1–2 hours to under 90 seconds. The costing pipeline, 93% faster. The infrastructure bill, down 40%.</li>
         </ul>
-        <span class="sfx sfx--inline">95% FASTER!</span>
       </article>
 
       <article class="mission reveal-pop">
@@ -296,9 +297,9 @@
         </div>
         <p class="villain"><span class="villain__tag">The Villain</span> Cloud Sprawl — 1,000+ scattered assets, hidden vulnerabilities, and incident response that crawled.</p>
         <ul class="hits">
-          <li><b>POW!</b> Consolidated 1,000+ infra assets (DaaS, S3, IAM) for JP Morgan and automated bulk provisioning with CloudFormation.</li>
-          <li><b>ZAP!</b> Helped build a serverless GCP vulnerability radar watching 30+ cloud accounts from one control plane.</li>
-          <li><b>BAM!</b> Shipped an incident-intelligence RAG tool so on-call engineers could query past incidents and pull runbook fixes fast.</li>
+          <li>Consolidated 1,000+ infrastructure assets (DaaS, S3, IAM) for JP Morgan and automated provisioning with CloudFormation.</li>
+          <li>Built a serverless GCP vulnerability radar watching 30+ cloud accounts from a single control plane.</li>
+          <li>Shipped an incident-intelligence RAG tool — on-call engineers query past incidents and pull runbook fixes in seconds.</li>
         </ul>
       </article>
     </section>
@@ -329,7 +330,7 @@
     <!-- SIGNAL -->
     <section class="cstrip csignal">
       <h2 class="chapter reveal-pop"><span>Final Page</span>Send a Signal</h2>
-      <div class="caption reveal-pop">Every hero answers the call. Need one for your codebase? The line is open.</div>
+      <div class="caption reveal-pop">Cases close. New ones open. Need someone for yours? The line's open.</div>
       <div class="signal__links reveal-pop">
         <a href="mailto:mgokul06@gmail.com"><svg class="ico"><use href="#i-mail"/></svg>mgokul06@gmail.com</a>
         <a href="tel:+919790256987"><svg class="ico"><use href="#i-phone"/></svg>+91 97902 56987</a>
